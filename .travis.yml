@@ -2,3 +2,17 @@ language: node_js
 sudo: false
 before_install:
   npm i -g npm
+matrix:
+  include:
+    - node_js: "0.12"
+    - node_js: "4"
+    - node_js: "io.js"
+deploy:
+  - provider: npm
+    skip_cleanup: true
+    email: "hello@dominykas.com"
+    api_key:
+      secure: "LD7tSwve4mAI+1wL+UrLQ6UhDBDDWTNWwXCSDr1pdRc4Q1qGBSLovVsVQTVb+T6QlLxHIspDoU5/VijgYcX0sxdrYWLyXt8wYU4xuUJQ0u0nFXT0akI+gTuSyxob9VYt52KbQvFSkMnqtzv/wcuOvSr7Yk/Uu2nyeTlkMYKYZbizfBCKctZ76smFs7/JR9J0NE38h6rklm7voWyfwntE6hQdUF4zHMTpeaB5vuNcVrMzBLWVl9AGJfVOkc+JKi5LZv/pGIonrYzEwEKjt0QRO/UvWvKSMSLmq4JAGxOL/jjHVfTnQTO9MwsF+KAsbKiOlGrt/ThM0gFMCE4olWW6ufewoH6oBUEZZ5CjCB+0WK28y0RCTnvjV4kn9wxSAU+dU6fgYPsoxVWS82mXWjww+2D0uaxoqCjGTF7qyYYpZyTHLuTsBDOPKH6oD2m5vxB5T6meXB9YAzbT+H1czaO+QqMA76Y6yMllds6J8QWzkc884FG1VPwLdiaPUf/uCHYcG9uFVGwxp1VJpA8BV/+fKUiytaijcSze+PUKXVy22Vysj6xC3sQj3mL/OVEYUcj1bN9ox7LIWWFYHGyPl9+41VnnPXnic1hUy0rF5uq33RVSxi3AJIsqAPewmjBUobdrwGzoHPslcJir9ZZ8eqMSWTSsdZhzyPQgVFIGjCvPdwk="
+    on:
+      tags: true
+      node_js: "4"

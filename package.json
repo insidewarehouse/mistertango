@@ -1,6 +1,6 @@
 {
   "name": "mistertango",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "mistertango payment gateway client utils for node.js",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:insidewarehouse/mysql-wrapper.git"
+    "url": "git@github.com:insidewarehouse/mistertango.git"
   },
   "author": "Dominykas Blyžė, InsideWarehouse <hello@dominykas.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/insidewarehouse/mysql-wrapper/issues"
+    "url": "https://github.com/insidewarehouse/mistertango/issues"
   },
-  "homepage": "https://github.com/insidewarehouse/mysql-wrapper",
+  "homepage": "https://github.com/insidewarehouse/mistertango",
   "engines": {
     "node": "0.12.x || 4.x",
     "iojs": "*"
